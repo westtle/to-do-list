@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="author" content="westtle">
+	<meta name="description" content="A simple to-do list.">
+	<meta name="keywords" content="to do list, todo list, to-do list, simple to do list">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>To-Do List</title>
+
+	<link rel="icon" type="image/x-icon" href="#">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.min.css">
+</head>
+<body>
+	<main>
+		<div id="to-do-list">
+			<div class="__header">
+				<div class="_filter-icon">
+					<img src="assets/Images/filter.svg" width="21" height="21" alt="Filter">
+				</div>
+
+				<!-- display: none -->
+				<div class="_filter-options">
+					<span data-selected="true">none</span>
+					<span data-selected="false">incomplete</span>
+					<span data-selected="false">completed</span>
+				</div>
+				<!-- ------------- -->
+
+				<span><b>* Your List *</b></span>
+			</div>
+			<div class="__list-items"></div>
+			<div class="__add">
+				<input class="_add-input" type="text" placeholder="Input text here.">
+				<button class="_add-button">Add</button>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="assets/scripts/script.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/filter.min.js"></script>
+</body>
+</html>
