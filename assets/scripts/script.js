@@ -131,9 +131,9 @@ function itemTemplateCreate(item) {
 	return `<div class="_item" id="${item.id}">
 				<div class="activities_">${item.activities}</div>
 				<div class="tools_">
-					<img class="edit__" src="assets/Images/edit.svg" width="21" height="21" alt="Edit Item">
-					<img class="status__" src="assets/Images/square.svg" width="21" height="21" alt="Status Item">
-					<img class="remove__" src="assets/Images/x.svg" width="21" height="21" alt="Remove Item">
+					<img class="edit__" src="assets/Images/edit.svg" width="21" height="21" alt="Edit item">
+					<img class="status__" src="assets/Images/square.svg" width="21" height="21" alt="Status item">
+					<img class="remove__" src="assets/Images/x.svg" width="21" height="21" alt="Remove item">
 				</div>
 			</div>`;
 };
