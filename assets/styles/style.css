@@ -136,8 +136,9 @@ main {
 	display: flex;
 }
 
-.remove__,
-.edit__ {
+.edit__,
+.status__,
+.remove__ {
 	width: 1.313rem;
 	padding: 0.188rem;
 	opacity: 0.8;
@@ -198,14 +199,16 @@ main {
 
 @media (hover: hover) {
 	._filter-icon img,
-	.remove__,
-	.edit__ {
+	.edit__,
+	.status__,
+	.remove__ {
 		opacity: 0.6;
 	}
 
 	._filter-icon img:hover,
-	.remove__:hover,
-	.edit__:hover {
+	.edit__:hover,
+	.status__:hover,
+	.remove__:hover {
 		opacity: 0.8;
 	}
 

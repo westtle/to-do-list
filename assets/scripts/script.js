@@ -87,9 +87,11 @@ function changeStatus() {
 			if (item.completed == false) {
 				item.completed = true;
 				itemToChange.querySelector(".activities_").dataset.completed = "true";
+				itemToChange.querySelector(".status__").src = "assets/Images/check-square.svg";
 			} else {
 				item.completed = false;
 				itemToChange.querySelector(".activities_").dataset.completed = "false";
+				itemToChange.querySelector(".status__").src = "assets/Images/square.svg";
 			}
 		};
 	});
@@ -119,7 +121,7 @@ function renderItems(itemArray) {
 
 	    if (item.completed == true) {
 	    	let checkBox = document.querySelectorAll(".status__")[index];
-	   		checkBox.setAttribute("checked", true);
+	   		checkBox.src = "assets/Images/check-square.svg";
 	   		checkBox.parentNode.parentNode.querySelector(".activities_").dataset.completed = "true";
 	    };
 	});
@@ -130,7 +132,7 @@ function itemTemplateCreate(item) {
 				<div class="activities_">${item.activities}</div>
 				<div class="tools_">
 					<img class="edit__" src="assets/Images/edit.svg" width="21" height="21" alt="Edit Item">
-					<input class="status__" type="checkbox" aria-label="Status Item">
+					<img class="status__" src="assets/Images/square.svg" width="21" height="21" alt="Status Item">
 					<img class="remove__" src="assets/Images/x.svg" width="21" height="21" alt="Remove Item">
 				</div>
 			</div>`;
