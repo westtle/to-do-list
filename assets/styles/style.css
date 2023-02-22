@@ -117,13 +117,14 @@ main {
 
 .activities_ {
 	width: 100%;
+	padding-right: var(--seven);
 }
 
 .activities_ input {
 	border: none;
 	border-left: var(--border-shorthand);
 	width: 100%;
-	padding: 0 0 0 var(--seven);
+	padding: 0 var(--seven);
 	font-size: var(--font-size-button);
 }
 
