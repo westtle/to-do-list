@@ -64,6 +64,7 @@ main {
 }
 
 ._filter-icon img {
+	height: auto;
 	width: 1.313rem;
 	padding: 0.188rem;
 	opacity: 0.8;
@@ -139,6 +140,7 @@ main {
 .edit__,
 .status__,
 .remove__ {
+	height: auto;
 	width: 1.313rem;
 	padding: 0.188rem;
 	opacity: 0.8;
